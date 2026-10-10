@@ -24,6 +24,8 @@
 <p>本アプリには広告・トラッキング・外部の行動分析SDKや、運営者への診断自動送信機能はありません。AppleのOS・App Storeが扱う診断・購入等の情報はAppleの設定・サービスに従います。日記をAI解析サービスへ送る機能はありません。</p>
 <h2>7. 削除</h2>
 <p>記録はゴミ箱へ移動できます。ゴミ箱の記録は30日を経過した後、アプリ起動時などの整理処理で削除します。アプリの保存領域、書き出したファイル、端末バックアップ、Notionの情報は別々に管理されます。本アプリを削除する前に、必要な記録を書き出してください。</p>
+<p>同じ下書きが再保存されたり、削除済みの記録が不意に作り直されたりすることを防ぐため、下書きの識別番号（UUID）、形式のバージョン、保存を試みた内容と保存済みの記録から計算した2つの検証値（SHA-256）を、保存完了情報として端末内に残します。この情報には、日記本文・写真・録音そのもののコピーは含まれません。記録を完全に削除した後も保存完了情報は残り、アプリ内の削除機能や自動削除期限は設けていません。保存完了情報のファイルと2つの検証値を運営者やNotionへ送信することはありません。端末のバックアップに含まれる場合があり、アプリの取り除きやバックアップからの復元によって残ることがあるため、アプリの削除や再インストールだけで、バックアップを含むすべてのコピーが消えるとは保証しません。</p>
+<p lang="en">To prevent the same draft from being saved again or a deleted entry from being unintentionally recreated, we keep local save-completion information consisting of the draft identifier (UUID), a format version, and two verification values (SHA-256) calculated from the attempted save and the saved entry. This information does not contain copies of the diary text, photos, or audio recordings themselves. It remains after an entry is permanently deleted; the app provides no deletion control or automatic expiry for this information. The save-completion files and the two verification values are not sent to the operator or Notion. They may be included in device backups and may remain when the app is offloaded or when a backup is restored. Deleting or reinstalling the app alone therefore does not guarantee that every copy, including backups, is erased.</p>
 <h2>8. お問い合わせ</h2>
 <p><a href="mailto:enteriot@gmail.com">enteriot@gmail.com</a>
 問い合わせを送ると、返信先、本文、利用者が添付した情報を運営者が受け取ります。日記の内容、写真、録音、Notionトークンは送らないでください。
